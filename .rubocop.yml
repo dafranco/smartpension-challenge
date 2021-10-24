@@ -1,0 +1,8 @@
+AllCops:
+  Exclude:
+   - 'bin/*'
+   - 'Gemfile'
+   - 'spec/spec_helper.rb'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/*'
