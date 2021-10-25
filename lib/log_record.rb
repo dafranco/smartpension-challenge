@@ -2,7 +2,7 @@
 
 # encapsulates log records to have a clear interface
 class LogRecord
-  attr_accessor :raw_record
+  attr_reader :raw_record
 
   def initialize(raw_record)
     raise ArgumentError unless raw_record.is_a?(String)

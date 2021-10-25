@@ -6,7 +6,7 @@ class FileNotFound < StandardError; end
 
 # This class encapsulates the IO handling of logfiles
 class LogFile
-  attr_accessor :log_path
+  attr_reader :log_path
 
   def initialize(log_path)
     raise FileNotFound unless File.file?(log_path)
