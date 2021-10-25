@@ -2,7 +2,7 @@
 Hi there! Mi name is David Franco, and this repo has the solution I've created for the Ruby technical challenge.
 
 ## How to run it
-You'll need [bundler](https://bundler.io/) install in your machine. Once you have it, you'll need to run `bundle install` and now you're ready to use this awesome log parser!
+You'll need [bundler](https://bundler.io/) installed in your machine. Once you have it, you'll need to run `bundle install` and now you're ready to use this awesome log parser!
 
 As stated in the requirements you can run the parser by using the file called `parser.rb`. It receives a list of paths to parse (not only one). For example: `./parser.rb log/webserver.log`
 
