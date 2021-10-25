@@ -10,7 +10,7 @@ require 'unique_visits_counter'
 ARGV.each do |log_path|
   4.times { puts '' }
   puts "Analizing file #{log_path}"
-  log_records = LogFile.new(log_path).lines
+  log_records = LogFile.new(log_path).records
 
   puts 'Count of visits are: '
   VisitsCounter.new(log_records).count.each { |e| puts "#{e[0]}: #{e[1]}" }

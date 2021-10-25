@@ -14,13 +14,13 @@ class LogFile
     @log_path = log_path
   end
 
-  def lines
-    @lines ||= build_lines
+  def records
+    @records ||= build_records
   end
 
   private
 
-  def build_lines
+  def build_records
     IO.readlines(log_path).map { |e| LogRecord.new(e) }
   end
 end

@@ -15,16 +15,16 @@ RSpec.describe LogFile do
     end
   end
 
-  describe '#lines' do
+  describe '#records' do
     let(:log_file) { LogFile.new(fake_log_path) }
 
-    it 'should return all the lines in an Array' do
-      expect(log_file.lines).to be_an(Array)
+    it 'should return all the records in an Array' do
+      expect(log_file.records).to be_an(Array)
     end
 
     it 'should return records matching file' do
-      expect(log_file.lines[0].ip).to eq('192.168.0.1')
-      expect(log_file.lines[0].page).to eq('/home')
+      expect(log_file.records[0].ip).to eq('192.168.0.1')
+      expect(log_file.records[0].page).to eq('/home')
     end
   end
 end
