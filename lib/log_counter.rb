@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Parent class outlining the algorithm to count pagevisits by
-# different criterias. Subclassed must implement logic for grouping
+# Parent class outlining the algorithm to count page visits by
+# different criterias. Subclasses must implement logic for grouping
 class LogCounter
   def initialize(log_records)
     @log_records = log_records
